@@ -5,7 +5,6 @@ el estado de salud de mi CPU por un tiempo y guardar los resultados
 dentro de una carpeta llamada "health cpu"
 
 '''
-# import shutil
 import psutil
 import os
 import time
