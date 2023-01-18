@@ -3,12 +3,12 @@ import re
 import mutagen
 import sys
 
-#filename.endswith('.mp3') and
-
 def autotag(path, album):
     for filename in os.listdir(path):
         try:
-            if re.match(r'^\d+', filename):
+            
+# La condición siguiente utiliza el método match() para verificar si el inicio de la cadena de caracteres "filename" coincide con un patrón específico.
+            if re.match(r'^\d+', filename) and filename.endswith('.mp3'):
                 file_path = os.path.join(path, filename)
                 audio = mutagen.File(file_path)
                 song_number = re.search(r'\d+', filename).group()
@@ -18,14 +18,19 @@ def autotag(path, album):
                 audio.tags['TIT2'] = mutagen.id3.TIT2(encoding=2, text=[song_name])
                 # Aquí se establece el nombre del álbum entero
                 audio.tags['TALB'] = mutagen.id3.TALB(encoding=2, text=[album])
-    
+                #Aquí se guarda los nuevos metadatos del archivo.
                 audio.save()
+            else: 
+                print("La carpeta no contiene archivos en formato .mp3,\nasegúrese de añadir las canciones en el formato correcto.")
+                break
         except Exception as e:
             print("Cambia los permisos de tu carpeta e intenta nuevamente.")
             break
         else:
             print(F"Se actualizó metadatos de la canción: {song_name} correctamente.")
-   
+            sys.exit()
+
+
 def collect():
     global path
     global album
