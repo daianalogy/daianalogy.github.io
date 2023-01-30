@@ -7,7 +7,7 @@ def autotag(path, album):
     for filename in os.listdir(path):
         try:
             
-# La condición siguiente utiliza el método match() para verificar si el inicio de la cadena de caracteres "filename" coincide con un patrón específico.
+ # La condición siguiente utiliza el método match() para verificar si el inicio de la cadena de caracteres "filename" coincide con un patrón específico.
             if re.match(r'^\d+', filename) and filename.endswith('.mp3'):
                 file_path = os.path.join(path, filename)
                 audio = mutagen.File(file_path)
@@ -30,7 +30,6 @@ def autotag(path, album):
             print(F"Se actualizó metadatos de la canción: {song_name} correctamente.")
             sys.exit()
 
-
 def collect():
     global path
     global album
@@ -50,5 +49,3 @@ def collect():
 
 collect()
 autotag(path, album)
-
-
