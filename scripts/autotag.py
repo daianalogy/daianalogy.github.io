@@ -39,7 +39,7 @@ def collect():
         print("El directorio es válido...")
     # Comprueba que el directorio esté lleno.
         if len(os.listdir(path)) <= 0:
-            print("...pero está vació, por favor, agrege las canciones en formato .mp3 e intente nuevamente")   
+            print("...pero está vacío, por favor, agregue las canciones en formato .mp3 e intente nuevamente")   
             sys.exit()
         else:
             album = str(input("Ahora proporcione el nombre del álbum: "))        
