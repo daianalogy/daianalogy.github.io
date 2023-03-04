@@ -5,3 +5,5 @@ Todavía esta en construcción, uso personalmente Linux (void/artix) administrar
 
 - Conozco sobre systemd pero evito usarlo
 - Trabajo en dos laptop (Toshiba Satellite A205 2GB RAM CPU Dual Pentium)(Mini laptop 2GB RAM Intel Celeron 847) 
+- Me gusta trabajar con datos, consola (bash & python)
+- También hago diseño UX a la antigua (inkscape, gimp)
