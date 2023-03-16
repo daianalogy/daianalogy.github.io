@@ -18,15 +18,15 @@ wget https://dot.net/v1/dotnet-install.sh
 cd ~/.dotnet
 ```
 
-1. (OPCIONAL) Podemos dejar nuestra carpeta en ese mismo lugar o  moverla a /usr/share/ para tener todo más ordenado. Igualmente podemos renombrarla si queremos que deje de ser una carpeta oculta. Siéntete libre de saltarte el siguiente paso si no lo consideras necesario y no sabes mucho de directorios. 
+1. (OPCIONAL) Podemos dejar nuestra carpeta en ese mismo lugar o  copiarla a /usr/share/ para tener todo más ordenado. Igualmente podemos renombrarla si queremos que deje de ser una carpeta oculta. Siéntete libre de saltarte el siguiente paso si no lo consideras necesario y no sabes mucho de directorios. 
 
 ```bash
-cd /usr/share
+sudo cp -rv ~/.dotnet /usr/share
 
-sudo mv ~/.dotnet .
+sudo rm -r ~/.dotnet
 ```
 
-1. Una vez tenemos la carpeta en el directorio de nuestra preferencia o defecto debemos crear un enlace simbólico del archivo dotnet que apunte a los binarios de nuestro sistema. Recuerda siempre utilizar las rutas absolutas para éste tipo de procedimientos.
+1. Una vez tenemos la carpeta en el directorio de nuestra preferencia o defecto debemos crear un enlace simbólico del archivo dotnet que apunte a los binarios de nuestro sistema. Recuerda siempre utilizar las rutas absolutas para éste tipo de procedimientos si no sabes lo que haces.
 
 ```bash
 sudo ln -s /usr/share/.dotnet/dotnet /usr/bin
