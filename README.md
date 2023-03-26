@@ -25,4 +25,4 @@
 - Aquí encontraras mis scripts, apuntes y archivos de configuración de mis sistemas
 - Trabajo en dos laptop (Toshiba Satellite A205 2GB RAM CPU Dual Pentium)(Mini laptop 2GB RAM Intel Celeron 847) 
 - Me gusta trabajar con datos, consola (bash & python)
-- También hago diseño UX a la antigua (inkscape, gimp)
+- También hago diseño UX a la antigua nada de figma (inkscape, gimp)
