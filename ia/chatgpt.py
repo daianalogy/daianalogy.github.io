@@ -3,7 +3,7 @@
 import openai
 import sys
 
-openai.api_key = "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"
+openai.api_key = "AQUI VA TU API KEY"
 
 print("Bienvenido a ChatGPT")
 
